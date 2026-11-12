@@ -1,0 +1,101 @@
+:root {
+    --text-color: #000;
+    --link-color: #8c2626; /* Dark red/burgundy color for links */
+    --hover-color: #ba4a4a; /* Lighter red when hovering over the link */
+    --bg-color: #fff;
+    --font-stack: 'Inter', sans-serif;
+
+body {
+    font-family: var(--font-stack);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 24px;
+    padding-bottom: 4px;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+nav a.active {
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* Layouts */
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.content-left {
+    flex: 1.2;
+}
+
+.image-right {
+    flex: 1;
+}
+
+.image-right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.content-full {
+    flex: 1;
+    max-width: 800px;
+}
+
+/* Typography Details */
+h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
